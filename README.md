@@ -1,5 +1,13 @@
+[![bitHound Score](https://www.bithound.io/github/romain9292)](https://www.bithound.io/github/romain9292)
+
 # Mind-app
 Mind is a cross plateforme application that allows you to manage your contacts on any device using firebase and Ionic.
+
+[View Demo](https://sophro.firebaseapp.com/#/login "Demo")
+
+[Website] (https://mind-app.fr, "Website")
+
+Tested on IOS 10 - Iphone 6
 
 # Technologies
 
@@ -24,6 +32,17 @@ Latest dependecies:
 
 gulp-sass@2.1.0
 
+
+# Screen Shots:
+
+Once you are successfully running the app you will have the app like this:
+
+### iOS (coming soon): 
+<img src="" />
+
+### Android (coming soon): 
+<img src="" />
+
 # Contributing workflow
 
 Here’s how i suggest you go about proposing a change to this project:
@@ -36,3 +55,9 @@ Here’s how i suggest you go about proposing a change to this project:
 # License
 
 GNU GENERAL PUBLIC LICENSE
+
+#Contact:
+
+Romain : romain@beedev.io
+
+
