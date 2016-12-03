@@ -13,8 +13,8 @@ For more information about each frameworks:
 - [Ionic Framework][ionic] website.
 - [Firebase][firebase] manual page.
 
-[angularjs]: https://angularjs.com
-[ionic]: https://ionic.com
+[angularjs]: https://angularjs.org/
+[ionic]: http://ionicframework.com/
 [firebase]: https://firebase.com
 
 
