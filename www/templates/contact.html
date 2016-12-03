@@ -1,0 +1,73 @@
+<ion-view title="Contacts">
+
+
+
+<!--Boutton ajout de contact-->
+
+<ion-nav-buttons side="right">
+      <button class="button button-icon button-clear ion-plus" ng-click="modal1.show()">
+      </button>
+    </ion-nav-buttons>
+
+  
+
+    <!--Barre de recherche --> 
+
+ <button class="bar bar-subheader button-icon button-clear ion-search item-input-inset"  ng-click="showFilterBar()" >
+
+  Rechercher un contact | Vous avez {{nombreDeContacts}} contact(s)
+ 
+ 
+</button>
+</div>
+
+<!--Content--> 
+
+    
+    <ion-content  class="has-header has-subheader" >
+        
+       
+                            
+                            
+
+        <ion-list  can-swipe="true" show-Delete = "false" >
+
+       
+
+       
+            
+            <ion-item  ng-repeat="contact in contacts | orderBy:'nom' " class="item item-icon-right" type="item-text-wrap" href="#/app/contact/{{contact.$id}}">
+
+              
+
+                
+                <i class="icon ion-ios-arrow-right"></i>
+                <h2>{{contact.nom}} {{contact.prenom}}</h2>
+                    <br> 
+                    <p> {{contact.adresse}} <br> {{contact.cp}}</p>
+                    
+
+                          
+                      <p><a href="tel:{{contact.telephone}}" class="button button-clear">
+                         <i class="icon ion-ios-telephone-outline"></i>
+                      </a>
+                       <a href="mailto:{{contact.mail}}" class="button button-clear">
+                         <i class="icon ion-ios-email"></i>
+                      </a></p>
+                 
+                 
+
+                <ion-option-button class="button-assertive" ng-click="deleteContact(contact)"> Supprimer </ion-option-button>
+                <ion-option-button class="button-calm " ng-click="editContact(contact)"> Modifier </ion-option-button>
+                
+            
+            </ion-item>
+            
+            <ion-item ng-hide="contacts.length" style="text-align:center">Pour ajouter un contact cliquez sur le "+"</ion-item>
+          
+      
+        </ion-list>
+   
+    </ion-content>
+
+</ion-view>

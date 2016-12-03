@@ -5,6 +5,9 @@ Mind is a cross plateforme application that allows you to manage your contacts o
 
 [View Demo](https://sophro.firebaseapp.com/#/login "Demo")
 
+Login : test@beedev.io
+Password : test
+
 [Website](https://mind-app.fr "Website")
 
 Tested on IOS 10 - Iphone 6

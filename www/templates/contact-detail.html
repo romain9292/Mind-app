@@ -1,0 +1,71 @@
+<ion-view view-title="Anamneses">
+
+<ion-nav-buttons side="right">
+      <button class="button button-icon button-clear ion-compose" ng-click="modal.show()">
+      </button>
+    </ion-nav-buttons>
+
+
+<ion-content class="has-header has-subheader " ng-repeat="contact in contact">
+   
+    
+  <div class="item item-divider">
+    Détails
+  </div>
+  
+
+<div class="list">
+
+   <div class="item item-button-right">
+    Nom: {{contact.nom}}
+     </button>
+  </div>
+
+   <div class="item item-button-right">
+    Prenom : {{contact.prenom}}
+    </button>
+  </div>
+
+   <div class="item item-button-right">
+    Adresse : {{contact.adresse}}
+    </button>
+  </div>
+
+   <div class="item item-button-right">
+    Code postal : {{contact.cp}}
+    </button>
+  </div>
+
+
+  <div class="item item-button-right">
+    Mail: {{contact.mail}}
+    <a class="button button-positive" href="mailto:{{contact.mail}}">
+    <i class="icon ion-ios-email"></i> 
+    </a>
+  </div>
+  
+
+  <div class="item item-button-right">
+    Tel: {{contact.telephone}}
+    <a href="tel:{{contact.telephone}}" class="button button-positive">
+    <i class="icon ion-ios-telephone"></i> 
+    </a>
+
+  </div>
+
+
+</div>
+
+</ion-content>
+
+</ion-view>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+<link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+
+ <style>
+
+.header
+{
+    background-color: #34495e;
+}
+
+.subheader{
+
+    padding-top: 15px;
+}
+
+.fond 
+{
+    background-color: #ffffff;
+
+} 
+
+.logo{
+
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+h3
+{
+    color:#34495E;
+}
+
+</style>
+
+<ion-view>
+
+<ion-content padding="true" scroll="true">
+           
+        
+    <div class="subheader logo" align="center">
+
+
+        <img src="img/Mind.png">
+          
+            </div>
+     
+        
+            <h3 style="text-align:center;font-family:'Syncopate'">Mind</h3>
+           
+
+
+            <ion-list>
+                    
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input type="text" ng-model="user.email">
+            </label>
+            
+
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Password</span>
+                <input type="password"  ng-model="user.pwdForLogin">
+            </label>
+           
+        
+
+    
+            </ion-list>
+
+        <!-- Login function is called -->
+         <button ng-click="signIn(user)" class="button button-block button-positive">
+            Se connecter <i class="ion-arrow-right-c"></i>
+            </button>
+
+
+        <!-- Register function is called | In comment, please don't register to many user on my firebase
+        <a class="button button-positive button-clear button-block" 
+        ng-click="modal.show()">S'inscrire <i class="ion-arrow-right-c"></i> </a>
+        -->
+    
+
+        <br>
+        <div ng-click="modal2.show()" style="text-align:center; text-decoration:underline">Lire les CGU</div>
+         <p style="font-size:75%; text-align:center">En créant un compte vous acceptez les conditions d'utilisation</p>
+        <div ng-click="forget()" style="text-align:center; color:red; text-decoration:underline"> Mot de passe oublié</div>
+
+
+    </ion-content>
+</ion-view>
+
+
+

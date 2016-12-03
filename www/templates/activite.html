@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="css/angular-timeline.css"/>
+
+<ion-view view-title=" Activités">
+
+<ion-nav-buttons side="right">
+      <button class="button button-icon button-clear ion-plus" ng-click="modal.show()">
+      </button>
+    </ion-nav-buttons>
+
+    <div class="bar bar-subheader">
+  <h1 class="title"> Vous avez  <span class="badge badge-assertive">{{nombreDactivites}}</span> activités</h1>
+</div>
+
+<ion-content class="has-subheader">
+
+        
+
+
+  <ul class="timeline" ng-repeat="activite in activites | orderBy:'-createdAt' ">
+
+        <li>
+          <div class="timeline-badge" class="info"><i class="icon ion-checkmark-circled"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">{{activite.titre}}</h4>
+              <h2 style="color:#334A5C"><small class="text-muted"><i class="glyphicon glyphicon-time"></i>{{activite.createdAt | friendlyDate }} </small></h2>
+            </div>
+            <div class="timeine-body">
+              <p>{{activite.note}}</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+
+
+       <ion-item ng-hide="activites.length" style="text-align:center">Pour ajouter une activité cliquez sur le "+"</ion-item>
+
+
+</ion-content>
+
+
+
+
+
+</ion-view>
