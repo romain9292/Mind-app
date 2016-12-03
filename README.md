@@ -9,7 +9,7 @@ Firebase
 
 For more information about each frameworks:
 
-- [Angularjs][angularjs] of the [Pro Git][progit] website.
+- [Angularjs][angularjs] website.
 - [Ionic Framework][ionic] website.
 - [Firebase][firebase] manual page.
 
