@@ -1,4 +1,4 @@
-[![bitHound Score](https://www.bithound.io/github/romain9292)](https://www.bithound.io/github/romain9292)
+[![bitHound Overall Score](https://www.bithound.io/github/romain9292/Mind-app/badges/score.svg)](https://www.bithound.io/github/romain9292/Mind-app)
 
 # Mind-app
 Mind is a cross plateforme application that allows you to manage your contacts on any device using firebase and Ionic.
